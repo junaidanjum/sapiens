@@ -20,7 +20,7 @@ const profiles: ProfileProps[] = [
     id: "david-mendes-com",
     name: "David Mendes",
     role: "Designer",
-    bio: "Designer based in Germany.",
+    bio: "Brand Design+Strategy",
     website: "https://www.david-mendes.com",
   },
   {
