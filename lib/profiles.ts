@@ -1,85 +1,69 @@
+import { ProfileProps } from "@/components/profile-card";
+
 // Profile data
-const profiles = [
+const profiles: ProfileProps[] = [
   {
-    id: 1,
-    name: "Alex Johnson",
-    role: "Designer",
-    bio: "UI/UX designer focused on creating intuitive digital experiences",
-    website: "alexjohnson.design",
-    image:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 2,
-    name: "Sam Rivera",
+    id: "robb-is",
+    name: "Robb Böhnke",
     role: "Developer",
-    bio: "Full-stack developer specializing in React and Node.js",
-    website: "samrivera.dev",
-    image:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Developer & Designer based in Berlin, Germany.",
+    website: "https://robb.is/",
   },
   {
-    id: 3,
-    name: "Taylor Kim",
-    role: "Writer",
-    bio: "Technical writer and documentation specialist",
-    website: "taylorwrites.com",
-    image:
-      "https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=3376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 4,
-    name: "Jordan Lee",
-    role: "Designer",
-    bio: "Product designer with a focus on accessibility",
-    website: "jordanlee.co",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 5,
-    name: "Morgan Chen",
+    id: "rauno-me",
+    name: "Rauno Freiberg",
     role: "Developer",
-    bio: "Backend engineer working on distributed systems",
-    website: "morganchen.io",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "",
+    website: "https://rauno.me",
   },
   {
-    id: 6,
-    name: "Casey Wilson",
-    role: "Writer",
-    bio: "Content strategist and UX writer",
-    website: "caseywrites.net",
-    image:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 7,
-    name: "Riley Park",
+    id: "david-mendes-com",
+    name: "David Mendes",
     role: "Designer",
-    bio: "Brand and identity designer for tech startups",
-    website: "rileypark.design",
-    image:
-      "https://images.unsplash.com/photo-1484863137850-59afcfe05386?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Designer based in Germany.",
+    website: "https://www.david-mendes.com",
   },
   {
-    id: 8,
-    name: "Jamie Nguyen",
+    id: "cydstumpel-nl",
+    name: "Cyd Stumpel",
     role: "Developer",
-    bio: "Frontend developer specializing in animations and interactions",
-    website: "jamienguyen.dev",
-    image:
-      "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Creative Developer & Teacher from Amsterdam, The Netherlands.",
+    website: "https://cydstumpel.nl",
   },
   {
-    id: 9,
-    name: "Quinn Smith",
-    role: "Writer",
-    bio: "Journalist covering technology and digital culture",
-    website: "quinnsmith.com",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: "praveenjuge-com",
+    name: "Praveen Juge",
+    role: "Designer",
+    bio: "What’s up nerds? I’m Praveen Juge, a designer and developer.",
+    website: "https://praveenjuge.com",
+  },
+  {
+    id: "ibelick-com",
+    name: "Julien Thibeaut",
+    role: "Designer",
+    bio: "Building software with a focus on design, motion, and detail.",
+    website: "https://ibelick.com",
+  },
+  {
+    id: "mitul-ca",
+    name: "Mitul Shah",
+    role: "Designer",
+    bio: "Photographer, design engineer, and a bit more.",
+    website: "https://mitul.ca",
+  },
+  {
+    id: "taurean-work",
+    name: "Taurean Bryant",
+    role: "Designer",
+    bio: "Designer-turned-engineer with a deep love of the web.",
+    website: "https://taurean.work",
+  },
+  {
+    id: "paco-me",
+    name: "Paco Coursey",
+    role: "Developer",
+    bio: "Crafting interfaces. Building polished software and web experiences.",
+    website: "https://paco.me",
   },
 ];
 

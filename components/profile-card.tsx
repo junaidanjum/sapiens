@@ -1,35 +1,55 @@
 import Link from "next/link";
 import { Card } from "./ui/card";
+import { SquareArrowOutUpRight } from "lucide-react";
+import { profileIcon } from "@/lib/profile.icons";
 
-const ProfileCard = ({ profile }: any) => {
+export interface ProfileProps {
+  id: string;
+  name: string;
+  role: keyof typeof profileIcon;
+  website: string;
+  // image: string;
+  bio: string;
+}
+
+const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
   return (
-    <Card
-      key={profile.id}
-      className="inline-block group w-full border rounded-xl overflow-clip my-2 hover:opacity-80 transition-all duration-300"
-    >
-      <Link
-        href={`https://${profile.website}`}
-        target="_blank"
-        rel="noopener noreferrer"
+    <div>
+      <Card
+        key={profile.id}
+        className="inline-block group w-full border-0 overflow-clip my-2 hover:opacity-80 transition-all duration-300 rounded-none bg-muted p-6 pb-0"
       >
-        <div className="flex items-start space-x-4">
-          <div className="flex-1 min-w-0">
-            <img src={profile.image} className="border-b w-full object-cover" />
-            <div className="flex flex-col p-3">
-              <p className="text-xs text-muted-foreground tracking-wide">
-                {profile.role}
-              </p>
-              <h2 className="text-base font-medium truncate text-foreground">
-                {profile.name}
-              </h2>
-              <p className="text-sm font-light text-muted-foreground tracking-wide">
-                {profile.bio}
-              </p>
-            </div>
+        <Link href={profile.website} target="_blank" rel="noopener noreferrer">
+          <img
+            src={`/images/${profile.id}.jpg`}
+            className="object-cover shadow-xl"
+          />
+        </Link>
+      </Card>
+      <div className="flex justify-between pr-2 gap-2 items-start">
+        <div>
+          <div className="flex gap-1 text-muted-foreground items-start">
+            <h2 className="text-sm font-medium text-foreground/80">
+              {profile.name}
+            </h2>
+            {profileIcon[profile.role]}
+          </div>
+          <div>
+            <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide">
+              {profile.bio}
+            </p>
           </div>
         </div>
-      </Link>
-    </Card>
+        <Link
+          href={profile.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground"
+        >
+          <SquareArrowOutUpRight size={16} strokeWidth={1.5} />
+        </Link>
+      </div>
+    </div>
   );
 };
 
