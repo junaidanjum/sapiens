@@ -31,8 +31,8 @@ export default function Home() {
         <header className="mb-6">
           <div className="flex justify-between items-center mb-8">
             <div>
-              <h1 className="text-6xl font-bold tracking-tighter text-foreground">
-                sapiens
+              <h1 className="text-5xl font-bold tracking-tighter text-foreground">
+                sapiens.fyi
               </h1>
               <p className="text-lg font-light text-muted-foreground tracking-normal mt-1">
                 A curated collection of unique individuals across the internet,

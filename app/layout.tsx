@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "sapiens",
   description:
     "A curated collection of unique individuals across the internet, giving everyone a chance to be seen, appreciated, and connected.",
+  icons: {
+    icon: "/favicon.ico", // Path inside 'public' folder
+  },
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.style.fontFamily}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
