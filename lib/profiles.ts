@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "jonhargreaves-com",
+    name: "Jon Hargreaves",
+    role: "Designer",
+    bio: "Senior Product Designer at QuickNode and the Founder of Coffee Club.",
+    website: "https://www.jonhargreaves.com",
+  },
+  {
     id: "pedropeguerojr-com",
     name: "Pedro Peguero Jr.",
     role: "Designer",
