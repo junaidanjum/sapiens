@@ -43,13 +43,13 @@ export default function Home() {
                 <div>
                   <img src="/logo.png" className="w-10 h-10" loading="lazy" />
                 </div>
-                <h1 className="text-5xl font-bold tracking-tighter text-foreground">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-foreground">
                   sapiens.
-                  <span className="text-2xl font-light tracking-tighter text-muted-foreground">
+                  <span className="text-xl md:text-2xl font-light tracking-tighter text-muted-foreground">
                     website
                   </span>
                 </h1>
-                <p className="text-lg font-light text-muted-foreground tracking-normal mt-2 w-2/3">
+                <p className="text-base md:text-lg font-light text-muted-foreground tracking-normal mt-2 md:w-2/3">
                   A curated collection of unique individuals across the
                   internet, giving everyone a chance to be seen, appreciated,
                   and connected.
