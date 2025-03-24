@@ -7,7 +7,7 @@ const profiles: ProfileProps[] = [
     name: "Nick Noble",
     role: "Designer",
     bio: "Building better teams and smaller software @ Miniware.",
-    website: "nicknoble.works",
+    website: "https://nicknoble.works",
   },
   {
     id: "robb-is",
