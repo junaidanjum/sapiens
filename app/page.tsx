@@ -33,6 +33,9 @@ export default function Home() {
         <header className="mb-6">
           <div className="flex justify-between items-center mb-8">
             <div>
+              <span>
+                <img src="/logo.png" className="w-10" />
+              </span>
               <h1 className="text-5xl font-bold tracking-tighter text-foreground">
                 sapiens.
                 <span className="text-2xl font-light tracking-tighter text-muted-foreground">

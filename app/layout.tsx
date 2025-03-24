@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico", // Path inside 'public' folder
   },
+  openGraph: {
+    title: "sapiens",
+    description:
+      "A curated collection of unique individuals across the internet, giving everyone a chance to be seen, appreciated, and connected.",
+    images: [
+      {
+        url: "/og.png", // Path inside 'public' folder
+        width: 1200,
+        height: 630,
+        alt: "Sapiens Open Graph Image",
+      },
+    ],
+  },
 };
 
 const inter = Inter({ subsets: ["latin"] });

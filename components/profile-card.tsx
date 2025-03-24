@@ -15,7 +15,7 @@ export interface ProfileProps {
 const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
   return (
     <Link
-      href={profile.website}
+      href={`${profile.website}?ref=sapiens.website`}
       target="_blank"
       rel="noopener noreferrer"
       className="group"
