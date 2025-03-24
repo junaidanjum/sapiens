@@ -59,7 +59,8 @@ export default function Home() {
             <div className="flex flex-wrap gap-2 text-sm justify-between">
               <ToggleGroup
                 defaultValue="All"
-                onValueChange={(value) => setFilter(value)}
+                value={filter}
+                onValueChange={(value) => setFilter(value || "All")}
                 size="sm"
                 type="single"
               >
