@@ -14,22 +14,28 @@ export interface ProfileProps {
 
 const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
   return (
-    <div>
+    <Link
+      href={profile.website}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group"
+    >
       <Card
         key={profile.id}
-        className="inline-block group w-full border-0 overflow-clip my-2 hover:opacity-80 transition-all duration-300 rounded-none bg-muted p-6 pb-0"
+        className="inline-block group w-full border-0 overflow-clip mb-2 hover:opacity-80 transition-all duration-300 rounded-none bg-muted p-6 pb-0"
       >
-        <Link href={profile.website} target="_blank" rel="noopener noreferrer">
+        <div className="relative w-full h-40">
           <img
             src={`/images/${profile.id}.jpg`}
-            className="object-cover shadow-xl"
+            className="object-cover shadow-xl w-full h-full"
+            loading="lazy"
           />
-        </Link>
+        </div>
       </Card>
       <div className="flex justify-between pr-2 gap-2 items-start">
         <div>
           <div className="flex gap-1 text-muted-foreground items-start">
-            <h2 className="text-sm font-medium text-foreground/80">
+            <h2 className="text-sm font-medium text-foreground/80 group-hover:underline">
               {profile.name}
             </h2>
             {profileIcon[profile.role]}
@@ -40,16 +46,22 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
             </p>
           </div>
         </div>
-        <Link
+        {/* <Link
           href={profile.website}
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground"
-        >
-          <SquareArrowOutUpRight size={16} strokeWidth={1.5} />
-        </Link>
+        > */}
+        <div>
+          <SquareArrowOutUpRight
+            size={14}
+            strokeWidth={1.5}
+            className="text-muted-foreground"
+          />
+        </div>
+        {/* </Link> */}
       </div>
-    </div>
+    </Link>
   );
 };
 

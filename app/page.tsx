@@ -10,6 +10,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { switchTheme } from "@/hooks/switch-theme";
 import { profileIcon } from "@/lib/profile.icons";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Home() {
   const [filter, setFilter] = useState("All");
@@ -33,9 +34,12 @@ export default function Home() {
           <div className="flex justify-between items-center mb-8">
             <div>
               <h1 className="text-5xl font-bold tracking-tighter text-foreground">
-                sapiens.fyi
+                sapiens.
+                <span className="text-2xl font-light tracking-tighter text-muted-foreground">
+                  website
+                </span>
               </h1>
-              <p className="text-lg font-light text-muted-foreground tracking-normal mt-1">
+              <p className="text-lg font-light text-muted-foreground tracking-normal mt-2 w-2/3">
                 A curated collection of unique individuals across the internet,
                 giving everyone a chance to be seen, appreciated, and connected.
               </p>
@@ -56,9 +60,9 @@ export default function Home() {
             </ToggleGroup>
             {/* //todo: add actual form for adding new profiles */}
             <Button variant="secondary">
-              <a href="mailto:junaidanjum@live.com?subject=Add%20Me%20On%20Sapiens&body=Name:%0ARole (Designer/ Developer/Writer):%0AOne%20Line%20Description:%0AWebsite%20Link:%0A">
+              <Link href="mailto:junaidanjum@live.com?subject=Add%20Me%20On%20Sapiens&body=Name:%0ARole (Designer/ Developer/Writer):%0AOne%20Line%20Description:%0AWebsite%20Link:%0A">
                 Add Me
-              </a>
+              </Link>
             </Button>
           </div>
           <Separator className="opacity-50 mt-4" />
