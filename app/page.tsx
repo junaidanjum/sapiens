@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex justify-between items-center mb-8">
             <div>
               <span>
-                <img src="/logo.png" className="w-10" />
+                <img src="/logo.png" className="w-10" loading="lazy" />
               </span>
               <h1 className="text-5xl font-bold tracking-tighter text-foreground">
                 sapiens.
