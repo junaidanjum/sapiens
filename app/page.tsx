@@ -9,6 +9,7 @@ import profiles from "@/lib/profiles";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { switchTheme } from "@/hooks/switch-theme";
 import { profileIcon } from "@/lib/profile.icons";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const [filter, setFilter] = useState("All");
@@ -70,6 +71,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
