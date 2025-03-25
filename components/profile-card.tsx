@@ -27,7 +27,7 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
         <div className="relative w-full h-40">
           <img
             src={`/images/${profile.id}.jpg`}
-            className="object-cover shadow-xl w-full h-full"
+            className="object-cover object-top shadow-xl w-full h-full"
             loading="lazy"
           />
         </div>
