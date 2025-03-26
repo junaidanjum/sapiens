@@ -6,7 +6,7 @@ const profiles: ProfileProps[] = [
     id: "emilkowal-ski",
     name: "Emil Kowalski",
     role: "Designer",
-    bio: "I like to build things for designers and developers, and think deeply about the user interface, how it looks, feels, behaves.",
+    bio: "Design Engineer at Linear.",
     website: "https://emilkowal.ski",
   },
   {
