@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "dennissnellenberg-com",
+    name: "Dennis Snellenberg",
+    role: "Developer",
+    bio: "Helping brands to stand out in the digital era.",
+    website: "https://dennissnellenberg.com",
+  },
+  {
     id: "martin-laxenaire-fr",
     name: "Martin Laxenaire",
     role: "Developer",
