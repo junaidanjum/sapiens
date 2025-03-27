@@ -19,16 +19,16 @@ const pageVariants = {
 };
 
 export default function Home() {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState<"All" | keyof typeof profileIcon>("All");
   // Filter profiles based on selected category
   const filteredProfiles =
     filter === "All"
       ? profiles
-      : profiles.filter((profile) => profile.role === filter);
+      : profiles.filter((profile) => profile.roles.includes(filter));
 
   const filterGroups = [
     "All",
-    ...new Set(profiles.map((profile) => profile.role)),
+    ...new Set(profiles.map((profile) => profile.roles).flat()),
   ];
 
   switchTheme();
@@ -60,7 +60,9 @@ export default function Home() {
               <ToggleGroup
                 defaultValue="All"
                 value={filter}
-                onValueChange={(value) => setFilter(value || "All")}
+                onValueChange={(value: "All" | keyof typeof profileIcon) =>
+                  setFilter(value || "All")
+                }
                 size="sm"
                 type="single"
               >

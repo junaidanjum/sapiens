@@ -6,7 +6,7 @@ import { profileIcon } from "@/lib/profile.icons";
 export interface ProfileProps {
   id: string;
   name: string;
-  role: keyof typeof profileIcon;
+  roles: Array<keyof typeof profileIcon>;
   website: string;
   // image: string;
   bio: string;
@@ -38,7 +38,7 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
             <h2 className="text-sm font-medium text-foreground/80 group-hover:underline">
               {profile.name}
             </h2>
-            {profileIcon[profile.role]}
+            {profile.roles.map((role) => profileIcon[role])}
           </div>
           <div>
             <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide">
