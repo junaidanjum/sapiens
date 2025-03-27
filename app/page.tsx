@@ -12,6 +12,7 @@ import { profileIcon } from "@/lib/profile.icons";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Github, UserRoundPlus } from "lucide-react";
 
 const pageVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -72,12 +73,28 @@ export default function Home() {
                   </ToggleGroupItem>
                 ))}
               </ToggleGroup>
-              {/* //todo: add actual form for adding new profiles */}
-              <Button variant="secondary">
-                <Link href="mailto:junaidanjum@live.com?subject=Add%20Me%20On%20Sapiens&body=Name:%0ARole (Designer/ Developer/Writer):%0AOne%20Line%20Description:%0AWebsite%20Link:%0A">
-                  Add Me
+              <div className="flex gap-2">
+                <Link
+                  href="https://github.com/junaidanjum/sapiens/issues/new?template=add-portfolio.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline">
+                    <UserRoundPlus />
+                    Add Me
+                  </Button>
                 </Link>
-              </Button>
+                <Link
+                  href="https://github.com/junaidanjum/sapiens"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline">
+                    <Github />
+                    Star on GitHub
+                  </Button>
+                </Link>
+              </div>
             </div>
             <Separator className="opacity-50 mt-4" />
           </header>
