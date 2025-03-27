@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "marcel-apitty-wcopilot-webflow-io",
+    name: "Marcel Apitty",
+    roles: ["Designer"],
+    bio: "Creative UI/UX Designer based in Brazil.",
+    website: "https://marcel-apitty.wcopilot.webflow.io",
+  },
+  {
     id: "dennissnellenberg-com",
     name: "Dennis Snellenberg",
     roles: ["Designer", "Developer"],
