@@ -10,6 +10,8 @@ export interface ProfileProps {
   website: string;
   // image: string;
   bio: string;
+  video?: string;
+  image?: string;
 }
 
 const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
@@ -22,14 +24,29 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
     >
       <Card
         key={profile.id}
-        className="inline-block group w-full border-0 overflow-clip mb-2 hover:opacity-80 transition-all duration-300 rounded-none bg-muted p-6 pb-0"
+        className="inline-block group w-full border-0 overflow-clip mb-2 rounded-none bg-muted p-6 pb-0"
       >
         <div className="relative w-full h-40">
-          <img
-            src={`/images/${profile.id}.jpg`}
-            className="object-cover object-top shadow-xl w-full h-full"
-            loading="lazy"
-          />
+          {profile.video ? (
+            <video
+              src={profile.video}
+              loop
+              muted
+              onMouseEnter={(e) => {
+                e.currentTarget.play();
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.pause();
+                e.currentTarget.currentTime = 0;
+              }}
+            />
+          ) : (
+            <img
+              src={profile.image || `/images/${profile.id}.jpg`}
+              className="object-cover object-top shadow-xl w-full h-full hover:opacity-80 transition-all duration-300"
+              loading="lazy"
+            />
+          )}
         </div>
       </Card>
       <div className="flex justify-between pr-2 gap-2 items-start">

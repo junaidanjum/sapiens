@@ -15,6 +15,8 @@ const profiles: ProfileProps[] = [
     roles: ["Designer"],
     bio: "Creative UI/UX Designer based in Brazil.",
     website: "https://marcel-apitty-wcopilot.webflow.io",
+    image:
+      "https://assets.awwwards.com/awards/media/cache/thumb_880_660/submissions/2024/01/65a8ecabf32a3844480038.png",
   },
   {
     id: "dennissnellenberg-com",
@@ -22,6 +24,8 @@ const profiles: ProfileProps[] = [
     roles: ["Designer", "Developer"],
     bio: "Helping brands to stand out in the digital era.",
     website: "https://dennissnellenberg.com",
+    video:
+      "https://assets.awwwards.com/awards/sites_of_the_day/2022/06/dennissnellenberg-1600x1200-opti.mp4",
   },
   {
     id: "martin-laxenaire-fr",
