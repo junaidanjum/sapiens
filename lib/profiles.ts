@@ -3,9 +3,18 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "tobiasthaden-com",
+    name: "Tobias Thaden",
+    roles: ["Developer", "Designer"],
+    bio: "Tobias Thaden is a software developer and product designer.",
+    website: "https://tobiasthaden.com",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2020/11/tumblr_pgp1u8f8sT1sjvgq8o1_1280-900x500.png",
+  },
+  {
     id: "matejbaco-eu",
     name: "Matej Bačo",
-    roles: ["Developer", "Writer"],
+    roles: ["Developer"],
     bio: "Impact-driven software engineer from Czech Republic in love with everything open source.",
     website: "https://www.matejbaco.eu",
   },
