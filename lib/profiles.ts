@@ -3,6 +3,15 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "sidney.me",
+    name: "Sidney Alcantara",
+    roles: ["Designer"],
+    bio: "Design Engineer at Canva based in Sydney.",
+    website: "https://sidney.me",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2023/05/sidney-alcantara-2048x1138.jpg",
+  },
+  {
     id: "andyrader-com",
     name: "Andy Rader",
     roles: ["Designer", "Developer"],
