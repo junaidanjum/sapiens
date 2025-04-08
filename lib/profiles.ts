@@ -3,7 +3,16 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
-    id: "sidney.me",
+    id: "gracewalker-ca",
+    name: "Grace Walker",
+    roles: ["Designer"],
+    bio: "An independent designer working with companies at the edge of new frontiers.",
+    website: "https://www.gracewalker.ca",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2024/09/www.gracewalker.ca_-900x500.png",
+  },
+  {
+    id: "sidney-me",
     name: "Sidney Alcantara",
     roles: ["Designer"],
     bio: "Design Engineer at Canva based in Sydney.",
