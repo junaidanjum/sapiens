@@ -3,6 +3,15 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "p-cv",
+    name: "Paul Macgregor",
+    roles: ["Designer"],
+    bio: "Designer at Linear, based in UK.",
+    website: "https://p.cv",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2024/12/p.cv_-2048x1138.png",
+  },
+  {
     id: "andychung-me",
     name: "Andy Chung",
     roles: ["Designer"],
