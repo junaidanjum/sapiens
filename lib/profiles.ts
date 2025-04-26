@@ -3,6 +3,15 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "carlhauser.com",
+    name: "Sebastian (Carl Hauser)",
+    roles: ["Designer"],
+    bio: "Multi-disciplinary designer from Germany, based in Tokyo. Head of Design at Analogue",
+    website: "https://www.carlhauser.com",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2025/04/www.carlhauser.com_-2048x1138.png",
+  },
+  {
     id: "p-cv",
     name: "Paul Macgregor",
     roles: ["Designer"],
