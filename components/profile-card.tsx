@@ -32,6 +32,7 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
               src={profile.video}
               loop
               muted
+              autoPlay
               onMouseEnter={(e) => {
                 e.currentTarget.play();
               }}
