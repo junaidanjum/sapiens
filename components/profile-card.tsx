@@ -26,7 +26,7 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
         key={profile.id}
         className="inline-block group w-full border-0 overflow-clip mb-2 rounded-none bg-muted p-6 pb-0"
       >
-        <div className="relative w-full h-40">
+        <div className="relative w-full h-52 sm:h-40">
           {profile.video ? (
             <video
               src={profile.video}

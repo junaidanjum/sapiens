@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-foreground">
                   sapiens.
-                  <span className="text-xl md:text-2xl font-light tracking-tighter text-muted-foreground">
+                  <span className="text-xl md:text-2xl font-light tracking-tight text-muted-foreground">
                     website
                   </span>
                 </h1>
