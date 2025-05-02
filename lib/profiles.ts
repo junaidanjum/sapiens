@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "tonykahn-org",
+    name: "Tony Kahn",
+    roles: ["Writer"],
+    bio: "40+ year veteran Senior Producer and Host for NPR and public radio WGBH.",
+    website: "https://tonykahn.org",
+  },
+  {
     id: "andreaperato-com",
     name: "Andrea Perato",
     roles: ["Designer"],
@@ -40,15 +47,7 @@ const profiles: ProfileProps[] = [
     image:
       "https://minimal.gallery/wp-content/uploads/2025/04/www.carlhauser.com_-2048x1138.png",
   },
-  {
-    id: "p-cv",
-    name: "Paul Macgregor",
-    roles: ["Designer"],
-    bio: "Designer at Linear, based in UK.",
-    website: "https://p.cv",
-    image:
-      "https://minimal.gallery/wp-content/uploads/2024/12/p.cv_-2048x1138.png",
-  },
+
   {
     id: "andychung-me",
     name: "Andy Chung",
@@ -58,7 +57,15 @@ const profiles: ProfileProps[] = [
     image:
       "https://minimal.gallery/wp-content/uploads/2020/11/49169cb4ea710de6e9bc8380f9ef5cb7fa65ce11.png",
   },
-
+  {
+    id: "p-cv",
+    name: "Paul Macgregor",
+    roles: ["Designer"],
+    bio: "Designer at Linear, based in UK.",
+    website: "https://p.cv",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2024/12/p.cv_-2048x1138.png",
+  },
   {
     id: "gracewalker-ca",
     name: "Grace Walker",
