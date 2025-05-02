@@ -75,7 +75,7 @@ export default function Home() {
               </ToggleGroup>
               <div className="flex gap-2">
                 <Link
-                  href="https://github.com/junaidanjum/sapiens/issues/new?template=add-portfolio.md"
+                  href="https://forms.gle/HAgbhqRSaxymyayZA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -91,7 +91,6 @@ export default function Home() {
                 >
                   <Button variant="outline">
                     <Github />
-                    Star on GitHub
                   </Button>
                 </Link>
               </div>
