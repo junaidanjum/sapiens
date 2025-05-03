@@ -3,6 +3,14 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "peter-arendt",
+    name: "Peter Arendt",
+    roles: ["Designer", "Developer"],
+    bio: "Front-end web developer & designer based in Warsaw, Poland.",
+    website: "https://peterarendt.com",
+  },
+
+  {
     id: "tonykahn-org",
     name: "Tony Kahn",
     roles: ["Writer"],
