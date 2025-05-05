@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "jonyablonski-com",
+    name: "Jon Yablonski",
+    roles: ["Designer"],
+    bio: "Senior Product Designer @Mixpanel, author & creator of Laws of UX, creator of Humane by Design, and co-organizer of IXD2.",
+    website: "https://jonyablonski.com",
+  },
+  {
     id: "carlbeaverson-com",
     name: "Carl Beaverson",
     roles: ["Developer"],
