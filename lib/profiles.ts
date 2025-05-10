@@ -3,10 +3,17 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "jasonwalkow-com",
+    name: "Jason Walkow",
+    roles: ["Designer", "Developer"],
+    bio: "Creative founder based in Los Angeles. Head of Design at Plain Sight Ventures.",
+    website: "https://jasonwalkow.com",
+  },
+  {
     id: "jonaspelzer-com",
     name: "Jonas Pelzer",
     roles: ["Designer", "Developer"],
-    bio: "Designer combining visual and interactive design to create digital experiences that balance aesthetics and functionality.",
+    bio: "Designer combining visual and interactive design to create digital experiences.",
     website: "https://jonaspelzer.com",
   },
   {

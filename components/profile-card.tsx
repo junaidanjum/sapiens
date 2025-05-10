@@ -59,7 +59,7 @@ const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
             {profile.roles.map((role) => profileIcon[role])}
           </div>
           <div>
-            <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide">
+            <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide line-clamp-2">
               {profile.bio}
             </p>
           </div>
