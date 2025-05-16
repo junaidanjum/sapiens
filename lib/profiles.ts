@@ -3,6 +3,15 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "sam-marxz-com",
+    name: "Sam Marxz",
+    roles: ["Designer", "Developer"],
+    bio: "UI/UX Designer & Front-End Developer specializing in digital experiences that merge thoughtful design with clean code. Passionate about creating interfaces that tell stories and solve real problems.",
+    website: "https://marxz.me",
+    image:
+      "https://minimal.gallery/wp-content/uploads/2025/02/www.marxz_.me_-900x500.png",
+  },
+  {
     id: "komandin-com",
     name: "Anton",
     roles: ["Designer"],
