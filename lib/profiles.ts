@@ -3,6 +3,27 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "buszewski-com",
+    name: "Tomasz Buszewski",
+    roles: ["Designer", "Developer"],
+    bio: "Web designer and developer with 17 years of experience.",
+    website: "https://buszewski.com",
+  },
+  {
+    id: "lucasrees-com",
+    name: "Lucas Rees",
+    roles: ["Designer", "Developer"],
+    bio: "Designer, code writer & maker of things – habitual beginner and ‘learn-aholic’ with roughly 15 years of experience in creation and code",
+    website: "https://www.lucasrees.com",
+  },
+  {
+    id: "soahil",
+    name: "Soahil",
+    roles: ["Designer", "Developer"],
+    bio: "A full-stack software engineer with a passion for crafting impactful solutions. I team up with forward-thinking founders and investors to turn their cutting-edge ideas into tangible, market-ready products.",
+    website: "https://mrsohail.one",
+  },
+  {
     id: "sam-marxz-com",
     name: "Sam Marxz",
     roles: ["Designer", "Developer"],
