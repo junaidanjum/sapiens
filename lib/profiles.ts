@@ -3,6 +3,13 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "trbn-design",
+    name: "Denis Turbin",
+    roles: ["Designer", "Developer"],
+    bio: "UI/AI designer specializing in AI-powered design, rapid prototyping, and bold brand identities.",
+    website: "https://trbn.design",
+  },
+  {
     id: "abhinanditdesignportfolio",
     name: "Abhinandit Singh",
     roles: ["Designer"],
