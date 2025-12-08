@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Card } from "./ui/card";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { profileIcon } from "@/lib/profile.icons";
+import { motion } from "framer-motion";
 
 export interface ProfileProps {
   id: string;
@@ -16,70 +17,77 @@ export interface ProfileProps {
 
 const ProfileCard = ({ profile }: { profile: ProfileProps }) => {
   return (
-    <Link
-      href={`${profile.website}?ref=sapiens.website`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group"
+    <motion.div
+      initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <Card
-        key={profile.id}
-        className="inline-block group w-full border-0 overflow-clip mb-2 rounded-none bg-muted p-6 pb-0"
+      <Link
+        href={`${profile.website}?ref=sapiens.website`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
       >
-        <div className="relative w-full h-52 sm:h-40">
-          {profile.video ? (
-            <video
-              src={profile.video}
-              loop
-              muted
-              autoPlay
-              onMouseEnter={(e) => {
-                e.currentTarget.play();
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.pause();
-                e.currentTarget.currentTime = 0;
-              }}
-            />
-          ) : (
-            <img
-              src={profile.image || `/images/${profile.id}.jpg`}
-              className="object-cover object-top shadow-xl w-full h-full hover:opacity-80 transition-all duration-300"
-              loading="lazy"
-            />
-          )}
-        </div>
-      </Card>
-      <div className="flex justify-between pr-2 gap-2 items-start">
-        <div>
-          <div className="flex gap-1 text-muted-foreground items-start">
-            <h2 className="text-sm font-medium text-foreground/80 group-hover:underline">
-              {profile.name}
-            </h2>
-            {profile.roles.map((role) => profileIcon[role])}
+        <Card
+          key={profile.id}
+          className="inline-block group w-full border-0 overflow-clip mb-2 rounded-none bg-muted p-6 pb-0"
+        >
+          <div className="relative w-full h-52 sm:h-40">
+            {profile.video ? (
+              <video
+                src={profile.video}
+                loop
+                muted
+                autoPlay
+                onMouseEnter={(e) => {
+                  e.currentTarget.play();
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.pause();
+                  e.currentTarget.currentTime = 0;
+                }}
+              />
+            ) : (
+              <img
+                src={profile.image || `/images/${profile.id}.jpg`}
+                className="object-cover object-top shadow-xl w-full h-full hover:opacity-80 transition-all duration-300"
+                loading="lazy"
+              />
+            )}
           </div>
+        </Card>
+        <div className="flex justify-between pr-2 gap-2 items-start">
           <div>
-            <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide line-clamp-2">
-              {profile.bio}
-            </p>
+            <div className="flex gap-1 text-muted-foreground items-start">
+              <h2 className="text-sm font-medium text-foreground/80 group-hover:underline">
+                {profile.name}
+              </h2>
+              {profile.roles.map((role) => profileIcon[role])}
+            </div>
+            <div>
+              <p className="text-sm font-light text-muted-foreground mt-0.5 tracking-wide line-clamp-2">
+                {profile.bio}
+              </p>
+            </div>
           </div>
+          {/* <Link
+        href={profile.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-muted-foreground"
+      > */}
+          <div>
+            <SquareArrowOutUpRight
+              size={14}
+              strokeWidth={1.5}
+              className="text-muted-foreground"
+            />
+          </div>
+          {/* </Link> */}
         </div>
-        {/* <Link
-          href={profile.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-muted-foreground"
-        > */}
-        <div>
-          <SquareArrowOutUpRight
-            size={14}
-            strokeWidth={1.5}
-            className="text-muted-foreground"
-          />
-        </div>
-        {/* </Link> */}
-      </div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 };
 

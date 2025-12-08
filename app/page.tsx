@@ -11,12 +11,17 @@ import { switchTheme } from "@/hooks/switch-theme";
 import { profileIcon } from "@/lib/profile.icons";
 import Footer from "@/components/footer";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { Github, UserRoundPlus } from "lucide-react";
 
 const pageVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+    filter: "blur(0px)",
+  },
 };
 
 export default function Home() {
@@ -42,7 +47,7 @@ export default function Home() {
             <div className="flex justify-between items-center mb-8">
               <div>
                 <div>
-                  <img src="/logo.png" className="w-10 h-10" loading="lazy" />
+                  <img src="/logo.png" className="w-14 h-14" loading="lazy" />
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-foreground">
                   sapiens.
