@@ -18,12 +18,12 @@ const Footer = () => {
         <p className="text-balance text-center text-sm font-normal leading-loose text-muted-foreground md:text-left">
           If you have any suggestions or feedback, please contact me at{" "}
           <Link
-            href="mailto:junaidanjum@live.com"
+            href="mailto:hello@junaidanjum.in"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-4"
           >
-            junaidanjum@live.com
+            hello@junaidanjum.in
           </Link>
           .
         </p>
