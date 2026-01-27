@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-balance text-center text-sm font-normal leading-loose text-muted-foreground md:text-left">
           A small effort by{" "}
           <Link
-            href="https://junaidanjum.com"
+            href="https://junaidanjum.in"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-4"
