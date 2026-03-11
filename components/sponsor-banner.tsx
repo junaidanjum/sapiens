@@ -9,7 +9,7 @@ export default function SponsorBanner() {
         <span>
           Sponsor us for{" "}
           <span className="font-medium">₹5,000.00 / ~$60.00</span> and get your
-          name featured at the top of this site for an entire year.
+          profile featured at the top of this site for an entire year.
         </span>
         <Link
           href="https://github.com/sponsors/junaidanjum"
