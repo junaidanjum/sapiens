@@ -3,6 +3,48 @@ import { ProfileProps } from "@/components/profile-card";
 // Profile data
 const profiles: ProfileProps[] = [
   {
+    id: "zissou-com",
+    name: "zissou",
+    roles: ["Photographer"],
+    bio: "Photographer.",
+    website: "https://zissou.com",
+  },
+  {
+    id: "cathrine-co",
+    name: "Cathrine Understrup",
+    roles: ["Designer"],
+    bio: "Independent art director, designer and educator. 10+ years of experience in branding, advertising and visual design.",
+    website: "https://cathrine.co",
+  },
+  {
+    id: "davidwenk-de",
+    name: "David Wenk",
+    roles: ["Designer"],
+    bio: "Lead Product Designer shaping end-to-end UX/UI experiences and guiding teams to deliver impact in complex B2B products.",
+    website: "https://davidwenk.de",
+  },
+  {
+    id: "kalyp-so",
+    name: "Kalypso Kichu",
+    roles: ["Designer", "Developer"],
+    bio: "Product Designer - Based in New Zealand.",
+    website: "https://kalyp.so",
+  },
+  {
+    id: "pixels-studio",
+    name: "Abhishek Kambli",
+    roles: ["Designer", "Developer"],
+    bio: "Designer and Frontend Developer.",
+    website: "https://pixels.studio",
+  },
+  {
+    id: "ensage-co",
+    name: "Zlatko Najdenovski",
+    roles: ["Designer"],
+    bio: "Designing software that embody wisdom and feel natural.",
+    website: "https://ensage.co",
+  },
+  {
     id: "namitjuneja",
     name: "Namit Juneja",
     roles: ["Developer"],

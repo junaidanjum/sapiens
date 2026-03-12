@@ -1,7 +1,8 @@
-import { BookMarked, Code, Palette } from "lucide-react";
+import { BookMarked, Camera, Code, Palette } from "lucide-react";
 
 export const profileIcon = {
   Developer: <Code color="#4F6CFE" size={12} />,
   Designer: <Palette size={12} color="orange" />,
   Writer: <BookMarked size={12} color="green" />,
+  Photographer: <Camera size={12} color="#E040FB" />,
 };
