@@ -7,8 +7,8 @@ export default function SponsorBanner() {
       <span className="inline-flex items-center gap-1.5 flex-wrap justify-center">
         <span>Our domain is expiring soon.</span>
         <span>
-          Sponsor us for{" "}
-          <span className="font-medium">₹5,000.00 / ~$60.00</span> and get your
+          Sponsor us for as low as{" "}
+          <span className="font-medium">$5</span> and get your
           profile featured at the top of this site for an entire year.
         </span>
         <Link
