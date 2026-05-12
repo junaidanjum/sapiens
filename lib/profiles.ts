@@ -526,6 +526,13 @@ const profiles: ProfileProps[] = [
     bio: "Crafting interfaces. Building polished software and web experiences.",
     website: "https://paco.me",
   },
+  {
+    id: "parish-cv",
+    name: "Parish Khan",
+    roles: ["Developer"],
+    bio: "Senior frontend developer (10+ yrs). React, TypeScript, frontend architecture. Site is a VS Code-inspired interface.",
+    website: "https://parish.cv",
+  },
 ];
 
 export default profiles;
